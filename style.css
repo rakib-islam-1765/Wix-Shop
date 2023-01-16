@@ -1,0 +1,553 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.container {
+  max-width: 1174px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+/* common css */
+
+.flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.align-center {
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.gap-1 {
+  gap: 16px;
+}
+.gap-2 {
+  gap: 25px;
+}
+.gap-3 {
+  gap: 32px;
+}
+.gap-5 {
+  gap: 64px;
+}
+.list-none {
+  list-style-type: none;
+}
+img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* navbar start  */
+
+.nav-header {
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ecf4ff 100%);
+  padding: 33px 0;
+}
+
+.nav-menu li a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #101523;
+  text-decoration: none;
+  display: none;
+  transition: 0.4s ease-in;
+}
+.nav-menu li a:hover {
+  color: #3886fb;
+}
+.nav-icon li a {
+  color: rgb(0, 0, 0);
+  display: none;
+}
+.nav-icon {
+  gap: 15px;
+}
+.hamber {
+  display: block;
+}
+.hamber i {
+  font-size: 40px;
+  cursor: pointer;
+}
+.bi-list::before {
+  content: "\f479";
+  color: #000000;
+}
+@media (min-width: 768px) {
+  .nav-menu li a {
+    font-family: "Outfit";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #101523;
+    text-decoration: none;
+    display: block;
+  }
+  .nav-icon li a {
+    color: rgb(0, 0, 0);
+    display: block;
+  }
+  .hamber {
+    display: none;
+  }
+  .nav-menu {
+    gap: 62px;
+  }
+}
+
+/*-------------------- hero start ---------------------- */
+.main-three-section {
+  flex-direction: column;
+  gap: 100px;
+}
+.main-right-section {
+  flex-direction: column;
+}
+.main-hero {
+  background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ecf4ff 100%);
+  padding: 73px 0 0 0;
+}
+.container {
+  padding: 15px 0;
+}
+.right-section {
+  margin-left: 30px;
+}
+
+.right-section h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 80px;
+  color: #000000;
+}
+.right-section p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: #2c303d;
+  margin: 28px 0;
+}
+
+.button-and-socal-icon .hero-btn {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 20px;
+  color: #ffffff;
+  padding: 22px 33px;
+  background: #3886fb;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s ease-in;
+}
+.button-and-socal-icon .hero-btn:hover {
+  background: #1b66d8;
+}
+@media (min-width: 992px) {
+  .main-three-section {
+    flex-direction: row;
+  }
+  .main-hero {
+    background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ecf4ff 100%);
+    padding: 93px 0 0 0;
+  }
+  .right-section {
+    margin-left: 0px;
+  }
+}
+
+/* ---------------------just for you --------------- */
+.just-for-you-main-content {
+  flex-direction: column;
+  gap: 25px;
+}
+.just-for-you-text {
+  padding: 83px 0 35px 0;
+}
+.just-for-you-text h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 39px;
+  color: #0a0b14;
+}
+.left-right-icon {
+  cursor: pointer;
+}
+.just-for-right-contant p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #101523;
+  padding: 13px 0 13px 0;
+}
+.just-for-right-contant h4 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  color: #3886fb;
+  padding: 13px 0;
+}
+.cart-shopping {
+  gap: 9px;
+  margin-top: 16px;
+}
+.cart-shopping p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  color: #3886fb;
+}
+
+@media (min-width: 992px) {
+  .just-for-you-main-content {
+    flex-direction: row;
+  }
+  .main-right-section {
+    flex-direction: row;
+  }
+}
+/* ===============================woman================================== */
+.woman-top {
+  padding: 63px 0 25px 0;
+}
+.woman-top h4 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 39px;
+  color: #0a0b14;
+}
+.main-wonam-div {
+  flex-direction: column;
+  gap: 50px;
+}
+.woman-list {
+  gap: 50px;
+}
+.woman-list li a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: #a09eb3;
+  text-decoration: none;
+  transition: 0.4s ease-in;
+  display: none;
+}
+.woman-list li a:hover {
+  color: #2c303d;
+}
+.woman-list li a.woman-active {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 20px;
+  color: #2c303d;
+  text-decoration: none;
+}
+
+.clothes p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #2c303d;
+  margin-top: 16px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .woman-list li a {
+    display: block;
+  }
+  .main-wonam-div {
+    flex-direction: row;
+  }
+}
+
+/*========================= trending==================== */
+.trending-text {
+  margin-top: 50px;
+  margin-bottom: 27px;
+}
+.trending-text h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 39px;
+  color: #0a0b14;
+}
+.main-treanding-div {
+  flex-direction: column;
+  gap: 50px;
+}
+.denim-jeans-1 .shopping-star {
+  margin: 17px 0 10px 0;
+}
+.denim-jeans-1 p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #101523;
+}
+.denim-jeans-1 h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  color: #3886fb;
+  margin-top: 13px;
+}
+
+@media (min-width: 850px) {
+  .main-treanding-div {
+    flex-direction: row;
+  }
+}
+
+/* ================form text =============== */
+.form {
+  padding: 80px 0;
+}
+.main-form {
+  background-color: #f7f8fa;
+  padding: 0 22px;
+  flex-direction: column;
+  gap: 30px;
+}
+.form-text h1 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 55px;
+  color: #0a0b14;
+}
+.form-text p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 28px;
+  color: #101523;
+  max-width: 396px;
+  padding: 17px 0;
+}
+
+/* form  */
+.input {
+  background: #ffffff;
+  border-radius: 4px;
+  max-width: 574px;
+  display: flex;
+
+  margin: 25px auto;
+}
+.input input {
+  width: 70%;
+  padding: 22px 15px;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: #a09eb2;
+  border: none;
+}
+.input input:focus {
+  outline: none;
+}
+.input button {
+  width: 30%;
+  border: none;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 12px;
+  color: #ffffff;
+  background: #3886fb;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+.input button:hover {
+  color: #ffffff;
+  background: #1b66d8;
+}
+
+@media (min-width: 850px) {
+  .main-form {
+    flex-direction: row;
+    padding: 0 72px;
+  }
+  .input button {
+    width: 30%;
+    border: none;
+    font-family: "Poppins";
+    font-weight: 400;
+    font-size: 16px;
+    color: #ffffff;
+    background: #3886fb;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+  }
+}
+
+/* ======================footer start ================= */
+.main-footer {
+  flex-direction: column;
+  gap: 40px;
+  margin-left: 30px;
+}
+.footer {
+  background: #fafafa;
+  padding: 60px 0 0 0;
+}
+.footer-item-1 p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 30px;
+  color: #2c303d;
+  max-width: 281px;
+  margin-top: 44px;
+}
+.footer-item-2 {
+}
+.footer-item-2 h3 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  color: #0a0b14;
+}
+.footer-list li {
+  margin: 15px 0;
+}
+.footer-list li a {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 17px;
+  color: #2c303d;
+  text-decoration: none;
+  margin-top: 25px;
+}
+.footer-list li a:hover {
+  color: #000000;
+}
+.footer-item-2 .item-4 {
+}
+.footer-item-2.item-4 h4 {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #2c303d;
+  margin: 25px 0 15px 0;
+}
+.footer-item-2.item-4 p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 34px;
+  color: #2c303d;
+  max-width: 226px;
+}
+
+@media (min-width: 900px) {
+  .main-footer {
+    flex-direction: row;
+    margin-left: 0px;
+  }
+}
+
+/* ====================last section start ================ */
+.last-section {
+  padding: 65px 0 30px 0;
+}
+.main-last-section {
+  flex-direction: column;
+  gap: 30px;
+}
+.last-section-right p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+  color: #a09eb2;
+}
+.last-list li {
+  cursor: pointer;
+}
+.last-section-end p {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 30px;
+  color: #0d060c;
+}
+
+@media (min-width: 788px) {
+  .main-last-section {
+    flex-direction: row;
+  }
+}
+
+.meddle-section {
+  margin-left: 20px;
+}

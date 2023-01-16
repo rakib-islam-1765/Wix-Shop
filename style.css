@@ -134,9 +134,7 @@ img {
   background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ecf4ff 100%);
   padding: 73px 0 0 0;
 }
-.container {
-  padding: 15px 0;
-}
+
 .right-section {
   margin-left: 30px;
 }
@@ -179,6 +177,9 @@ img {
   .main-three-section {
     flex-direction: row;
   }
+  .container {
+    padding: 0 0px;
+  }
   .main-hero {
     background: radial-gradient(50% 50% at 50% 50%, #ffffff 0%, #ecf4ff 100%);
     padding: 93px 0 0 0;
@@ -189,6 +190,9 @@ img {
 }
 
 /* ---------------------just for you --------------- */
+.container {
+  padding: 0 15px;
+}
 .just-for-you-main-content {
   flex-direction: column;
   gap: 25px;
@@ -239,6 +243,9 @@ img {
 }
 
 @media (min-width: 992px) {
+  .container {
+    padding: 0 0px;
+  }
   .just-for-you-main-content {
     flex-direction: row;
   }
